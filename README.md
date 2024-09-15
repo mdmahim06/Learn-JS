@@ -1,67 +1,72 @@
+# JavaScript Backend
 
-# Data Types
+This repository provides a complete backend base built with JavaScript. It includes essential components for creating a robust and scalable backend application. 
 
-Here’s the updated list with `NaN` included:
+## Features
 
----
+- **Express.js**: Lightweight web framework for building APIs.
+- **MongoDB**: NoSQL database for storing data.
+- **Mongoose**: ODM library for MongoDB.
+- **Authentication**: Basic authentication and authorization setup.
+- **Routing**: Structured routing for easy endpoint management.
+- **Middleware**: Common middleware for request handling.
 
-### **Data Types in JavaScript**
+## Getting Started
 
-#### **Number**
+To get started with this backend base, follow these instructions:
 
-- **Description**: Represents numerical values, including both integers and floating-point numbers.
-- **Range**: Can store values from `-(2^53 - 1)` to `2^53 - 1` with precision.
-- **Use Cases**: Arithmetic operations, mathematical functions, and numeric calculations.
-- **Special Considerations**: For very large integers or precise calculations beyond this range, consider using `BigInt` or handle floating-point precision issues with `Number.EPSILON`.
+### Prerequisites
 
-#### **BigInt**
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [MongoDB](https://www.mongodb.com/) (Local or Atlas instance)
 
-- **Description**: A data type introduced in ES2020 for representing arbitrarily large integers.
-- **Range**: Can store integers beyond the limits of the `Number` type.
-- **Use Cases**: When exact calculations with very large integers are needed, such as in cryptography or high-precision computations.
-- **Creation**: Use the `n` suffix to create `BigInt` values (e.g., `123n`).
+### Installation
 
-#### **String**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
 
-- **Description**: Represents sequences of characters, which can include text, symbols, and numbers.
-- **Syntax**: Enclosed in single quotes (`'Hello'`) or double quotes (`"world"`).
-- **Use Cases**: Handling and manipulating textual data, user input, and string-based operations.
-- **Methods**: Common methods include `length`, `indexOf`, `slice`, and `concat`.
+## Table of Contents
 
-#### **Boolean**
+1. [Features](#features)
 
-- **Description**: Represents logical values, either `true` or `false`.
-- **Use Cases**: Control flow in conditional statements, logical operations (AND, OR, NOT), and decisions in programming.
+    1.1. [Technologies](#technologies)
 
-#### **null**
+    1.2. [Project Structure](#project-structure)
+2. [Getting Started](#getting-started)
 
-- **Description**: A special value indicating the deliberate absence of any object value.
-- **Use Cases**: To represent an intentionally empty or non-existent value for a variable or property.
+    2.1. [Installation](#installation)
+    
+    2.2. [Configuration](#configuration)
+3. [API Endpoints](#api-endpoints)
+4. [Error Handling](#error-handling)
+5. [Testing](#testing)
+6. [Security](#security)
+7. [Deployment](#deployment)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Contact](#contact)
 
-#### **undefined**
 
-- **Description**: A special value indicating that a variable has been declared but not yet assigned a value.
-- **Use Cases**: To check if a variable has been initialized; it is different from `null` which is used for explicit absence of value.
+## Features
 
-#### **Symbol**
+- **Express.js**: Simple and powerful framework for building web applications and APIs.
+- **MongoDB & Mongoose**: NoSQL database with Mongoose for object data modeling.
+- **JWT Authentication**: JSON Web Tokens for user authentication.
+- **Modular Architecture**: Separate layers for routes, services, and controllers.
+- **Error Handling**: Centralized error handling middleware.
+- **Environment Configurations**: Manage app settings using environment variables.
+- **Security Features**: Basic security best practices like helmet, rate limiting, and data validation.
+- **Testing Suite**: Includes unit and integration tests with Jest.
 
-- **Description**: A unique and immutable data type used for object properties that need to be unique or private.
-- **Creation**: Created using the `Symbol()` function.
-- **Use Cases**: Defining unique property keys that won’t clash with any other property keys.
+## Technologies
 
-#### **NaN**
+- **Node.js**: Backend runtime environment.
+- **Express.js**: Web application framework.
+- **MongoDB**: NoSQL database.
+- **Mongoose**: ODM for MongoDB.
+- **JWT**: JSON Web Tokens for secure authentication.
+- **Jest**: Testing framework.
 
-- **Description**: Stands for "Not a Number" and represents a value that is not a legal number, usually the result of invalid arithmetic operations.
-- **Type**: `NaN` is of type `number`.
-- **Use Cases**: Indicates an error or an undefined numerical result in calculations.
-- **Special Considerations**: `NaN` is not equal to any value, including itself. Use `isNaN()` to check if a value is `NaN`.
-
-  ```javascript
-  console.log(NaN === NaN); // false
-  console.log(isNaN(NaN)); // true
-  ```
-
----
-
-Let me know if you need more details or if there's anything else you'd like to add!
+## Project Structure
 
