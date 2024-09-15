@@ -68,5 +68,17 @@ To get started with this backend base, follow these instructions:
 - **JWT**: JSON Web Tokens for secure authentication.
 - **Jest**: Testing framework.
 
-## Project Structure
+### Project Structure
+
+- **controllers/**: Defines logic to handle incoming requests (e.g., user actions, authentication).
+- **models/**: Database schemas using Mongoose (e.g., `User.js` for user data).
+- **routes/**: API routes to map HTTP requests to controllers (e.g., authentication routes).
+- **middlewares/**: Middleware functions for authentication and error handling.
+- **services/**: Business logic separated from controllers for modularity (e.g., `authService.js`).
+- **config/**: Database connection and configuration files (e.g., `db.js` for MongoDB).
+- **tests/**: Unit and integration tests to validate functionality (e.g., tests for authentication).
+- **app.js**: Main application setup, including middleware and routes.
+- **server.js**: Initializes the server and connects the app to the database.
+- **.env**: Stores environment variables such as database URIs and secret keys.
+- **package.json**: Lists project dependencies and scripts for running tasks.
 
