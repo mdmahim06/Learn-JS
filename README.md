@@ -55,6 +55,7 @@ Here’s the updated list with `NaN` included:
 - **Type**: `NaN` is of type `number`.
 - **Use Cases**: Indicates an error or an undefined numerical result in calculations.
 - **Special Considerations**: `NaN` is not equal to any value, including itself. Use `isNaN()` to check if a value is `NaN`.
+
   ```javascript
   console.log(NaN === NaN); // false
   console.log(isNaN(NaN)); // true
