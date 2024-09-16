@@ -1,29 +1,66 @@
-# JavaScript Variables
 
-Variables are fundamental in JavaScript programming. They allow developers to store and manipulate data. This document explains the different types of variables, how to declare them, and best practices.
+# Data Types
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Variable Declarations](#variable-declarations)
-3. [Variable Types](#variable-types)
-4. [Variable Naming Rules](#variable-naming-rules)
-5. [Hoisting](#hoisting)
-6. [Best Practices](#best-practices)
-7. [Examples](#examples)
-8. [References](#references)
+Here’s the updated list with `NaN` included:
 
-## Introduction
-In JavaScript, a variable is a container that holds data that can be used and modified later. You can declare a variable using `var`, `let`, or `const`, each of which behaves differently.
+---
 
-## Variable Declarations
+### **Data Types in JavaScript**
 
-There are three ways to declare variables in JavaScript:
-1. **`var`**: The old way of declaring variables. `var` has function scope and is hoisted.
-2. **`let`**: Introduced in ES6, `let` has block scope, meaning it is confined to the block in which it is declared.
-3. **`const`**: Similar to `let`, but the value of the variable cannot be reassigned once it's declared.
+#### **Number**
 
-### Syntax:
-```javascript
-var x = 10;   // Using var
-let y = 20;   // Using let
-const z = 30; // Using const
+- **Description**: Represents numerical values, including both integers and floating-point numbers.
+- **Range**: Can store values from `-(2^53 - 1)` to `2^53 - 1` with precision.
+- **Use Cases**: Arithmetic operations, mathematical functions, and numeric calculations.
+- **Special Considerations**: For very large integers or precise calculations beyond this range, consider using `BigInt` or handle floating-point precision issues with `Number.EPSILON`.
+
+#### **BigInt**
+
+- **Description**: A data type introduced in ES2020 for representing arbitrarily large integers.
+- **Range**: Can store integers beyond the limits of the `Number` type.
+- **Use Cases**: When exact calculations with very large integers are needed, such as in cryptography or high-precision computations.
+- **Creation**: Use the `n` suffix to create `BigInt` values (e.g., `123n`).
+
+#### **String**
+
+- **Description**: Represents sequences of characters, which can include text, symbols, and numbers.
+- **Syntax**: Enclosed in single quotes (`'Hello'`) or double quotes (`"world"`).
+- **Use Cases**: Handling and manipulating textual data, user input, and string-based operations.
+- **Methods**: Common methods include `length`, `indexOf`, `slice`, and `concat`.
+
+#### **Boolean**
+
+- **Description**: Represents logical values, either `true` or `false`.
+- **Use Cases**: Control flow in conditional statements, logical operations (AND, OR, NOT), and decisions in programming.
+
+#### **null**
+
+- **Description**: A special value indicating the deliberate absence of any object value.
+- **Use Cases**: To represent an intentionally empty or non-existent value for a variable or property.
+
+#### **undefined**
+
+- **Description**: A special value indicating that a variable has been declared but not yet assigned a value.
+- **Use Cases**: To check if a variable has been initialized; it is different from `null` which is used for explicit absence of value.
+
+#### **Symbol**
+
+- **Description**: A unique and immutable data type used for object properties that need to be unique or private.
+- **Creation**: Created using the `Symbol()` function.
+- **Use Cases**: Defining unique property keys that won’t clash with any other property keys.
+
+#### **NaN**
+
+- **Description**: Stands for "Not a Number" and represents a value that is not a legal number, usually the result of invalid arithmetic operations.
+- **Type**: `NaN` is of type `number`.
+- **Use Cases**: Indicates an error or an undefined numerical result in calculations.
+- **Special Considerations**: `NaN` is not equal to any value, including itself. Use `isNaN()` to check if a value is `NaN`.
+
+  ```javascript
+  console.log(NaN === NaN); // false
+  console.log(isNaN(NaN)); // true
+  ```
+
+---
+
+Let me know if you need more details or if there's anything else you'd like to add!
