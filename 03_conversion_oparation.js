@@ -9,3 +9,6 @@ let valueInNumber = Number(score);
 // It returns NaN if the string cannot be parsed as a number.
 
 console.log(typeof valueInNumber);
+
+
+
