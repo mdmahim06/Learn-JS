@@ -9,6 +9,8 @@
 	// console.log(2 != 1); // check not equal
 	// console.log(2 !== 1); // check not equal with types
 
+	// this style of comparisons are important to learn but in production Don't use comparisons style like this. always avoid this type of comparisons
+
 	// all are return a boolean value
 
 	// console.log("2" > 1); // output is true
