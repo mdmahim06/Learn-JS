@@ -70,4 +70,3 @@ Here’s the updated list with `NaN` included:
   ```javascript
   console.log(NaN === NaN); // false
   console.log(isNaN(NaN)); // true
-
