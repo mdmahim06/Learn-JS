@@ -29,4 +29,3 @@
 	console.log(undefined <= 0); // output false
 
 	// comparisons covert undefined to a number, treating it as NaN.
-
