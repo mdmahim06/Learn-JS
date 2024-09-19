@@ -53,24 +53,138 @@ console.log(0 === false); // true, because they are both of the same type and va
 ```
 
 
+###  Loose Inequality (`!=`)
+The loose inequality operator checks if two values are not equal, performing type coercion if necessary.
+
+#### Syntax:
+
+```
+value1 != value2
+
+```
+
+
+#### Example:
+```javascript
+console.log(5 != '5'); // false, because '5' is coerced to the number 5
+console.log(null != undefined); // false, because both represent the absence of value
+console.log('0' != false); // false, '0' is coerced to 0 and false is coerced to 0
+
+```
+
+
+
 ### Strict Inequality  (`!==`)
 Strict inequality checks if two values are not identical in both type and value. It does not perform type conversion.
 
-**Syntax:**
+#### Syntax:
 
 ```
 value1 !== value2
 
 ```
 
-## Rules:
+#### Rules:
 - Values must be of different types or different values.
 
 
-**Example:**
+#### Example:
 ```javascript
 console.log(10 !== 5); // true
 console.log('hello' !== 'world'); // true
 console.log(true !== 1); // true
 console.log(undefined !== null); // true
+```
+
+
+### Greater Than (`>`)
+
+The greater than operator checks if the value on the left is greater than the value on the right.
+
+#### Syntax:
+
+```
+value1 > value2
+
+```
+
+#### Example:
+
+```
+console.log(10 > 5); // true
+console.log(5 > 10); // false
+console.log('apple' > 'banana'); // false, compared by Unicode value
+```
+
+
+
+
+
+###  Less Than (`<`)
+
+The less than operator checks if the value on the left is less than the value on the right.
+
+#### Syntax:
+
+```
+value1 < value2
+
+```
+
+#### Example:
+
+```
+console.log(5 < 10); // true
+console.log(10 < 5); // false
+console.log('apple' < 'banana'); // true, compared by Unicode value
+
+```
+
+
+
+
+
+### Greater Than or Equal To  (`>=`)
+
+The greater than or equal to operator checks if the value on the left is greater than or equal to the value on the right.
+
+#### Syntax:
+
+```
+value1 >= value2
+
+
+```
+
+#### Example:
+
+```
+console.log(10 >= 10); // true
+console.log(10 >= 5); // true
+console.log(5 >= 10); // false
+
+```
+
+
+
+
+###  Less Than or Equal To  (`<=`)
+
+The greater than operator checks if the value on the left is greater than the value on the right.
+
+#### Syntax:
+
+```
+value1 <= value2
+
+
+```
+
+#### Example:
+
+```
+console.log(5 <= 10); // true
+console.log(10 <= 10); // true
+console.log(10 <= 5); // false
+
 ```
